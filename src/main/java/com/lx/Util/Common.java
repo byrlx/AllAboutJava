@@ -2,6 +2,7 @@ package com.lx.Util;
 
 import com.google.common.base.Preconditions;
 import com.google.common.base.Predicates;
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import com.sun.istack.internal.NotNull;
 import com.sun.tools.javac.util.Pair;
 
@@ -38,7 +39,7 @@ public class Common {
     public static HashMap<String, String> readConfig(String fileName) {
         Preconditions.checkNotNull(fileName);
 
-        HashMap<String, String>  configs = new HashMap<>();
+        HashMap<String, String> configs = new HashMap<>();
 
         File file = new File(fileName);
         if (!file.exists()) {
@@ -52,14 +53,14 @@ public class Common {
             BufferedReader br = new BufferedReader(isr);
 
             String line;
-            while((line = br.readLine()) != null) {
-                if(line.startsWith("#")) continue;
+            while ((line = br.readLine()) != null) {
+                if (line.startsWith("#")) continue;
 
                 int index = line.indexOf('=');
-                if(index == -1) continue;
+                if (index == -1) continue;
 
                 String key = line.substring(0, index);
-                String value = line.substring(index+1, line.length());
+                String value = line.substring(index + 1, line.length());
 
                 configs.put(key, value);
             }
@@ -75,6 +76,10 @@ public class Common {
     }
 
     public static <T> void print(T obj) {
-        System.out.println(""+obj);
+        System.out.println("" + obj);
+    }
+
+    public static <T> void printThread(T obj) {
+        print(obj + " (" + Thread.currentThread() + ")");
     }
 }
