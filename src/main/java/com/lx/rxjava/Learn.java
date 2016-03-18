@@ -95,19 +95,11 @@ public class Learn {
         Observable<Integer> ob1 = Observable.just(1, 2, 3);
         Observable<String> ob2 = Observable.just("hi", "yha", "helo");
 
-        Observable<String> omap1 = ob1.flatMap(new Func1<Integer, Observable<String>>() {
-            @Override
-            public Observable<String> call(Integer integer) {
-                return Observable.just("a+" + integer);
-            }
-        });
+        Observable<String> omap1 = ob1.flatMap(integer -> Observable.just("a+" + integer));
 
         Observable.concat(ob2, omap1)
-                .subscribe(new Action1<String>() {
-                    @Override
-                    public void call(String s) {
-                        Common.printThread(s);
-                    }
+                .subscribe(s -> {
+                    Common.printThread(s);
                 });
         Common.noTerminal();
     }
