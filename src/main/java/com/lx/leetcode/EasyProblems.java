@@ -1,9 +1,5 @@
 package com.lx.leetcode;
 
-import com.lx.Util.Common;
-
-import java.util.Arrays;
-
 /**
  * Created by douhua on 3/3/16.
  */

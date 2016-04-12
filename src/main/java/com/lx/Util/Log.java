@@ -1,4 +1,4 @@
-package com.lx.Util;
+package com.lx.util;
 
 /**
  * Created by douhua on 2/25/16.

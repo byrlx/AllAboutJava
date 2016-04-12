@@ -1,6 +1,6 @@
 package com.lx.algorithm;
 
-import com.lx.Util.Common;
+import com.lx.util.Common;
 
 import java.util.Arrays;
 import java.util.LinkedHashSet;

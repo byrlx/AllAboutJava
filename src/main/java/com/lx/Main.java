@@ -1,9 +1,7 @@
 package com.lx;
 
-import com.lx.Util.Log;
-import com.lx.algorithm.trees.RbTree;
-import com.lx.reflect.FancyLog;
-import com.lx.rxjava.Learn;
+import com.lx.util.IoUtils;
+import com.lx.util.StringUtils;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,8 +10,9 @@ public class Main {
 //        GitParser.test();
 //        MysqlTester.start();
 //        System.out.println(Thread.currentThread());
-        Log.e("main");
 //        RbTree.test();
-        FancyLog.test();
+//        FancyLog.test();
+//        StringUtils.test();
+        IoUtils.test();
     }
 }

@@ -1,13 +1,11 @@
 package com.lx.git;
 
-import com.google.common.base.Preconditions;
-import com.lx.Util.Common;
+import com.lx.util.Common;
 import com.lx.git.beans.Branch;
 import com.lx.git.beans.Tag;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
  * 该类用于解析代码库的的git相关信息, 例如branch,

@@ -1,17 +1,13 @@
 package com.lx.rxjava;
 
-import com.lx.Util.Common;
+import com.lx.util.Common;
 import rx.Observable;
-import rx.Observer;
 import rx.Subscriber;
 import rx.functions.Action1;
 import rx.functions.Func0;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
-import java.io.InputStreamReader;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;

@@ -1,10 +1,11 @@
-package com.lx.Util;
+package com.lx.util;
 
 import com.google.common.base.Preconditions;
 
 import java.io.*;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by douhua on 2/24/16.
@@ -69,6 +70,25 @@ public class Common {
         }
 
         return configs;
+    }
+
+    /**
+     * 获取一组随机整数
+     */
+    public static int[] getRandomInt(int max) {
+        return getRandomInt(max, 10);
+    }
+
+    public static int[] getRandomInt(int max, int num) {
+        Random random = new Random(max);
+
+        int[] result = new int[num];
+
+        for (int i = 0; i < num; i++) {
+            result[i] = random.nextInt();
+        }
+
+        return result;
     }
 
     public static <T> void print(T obj) {

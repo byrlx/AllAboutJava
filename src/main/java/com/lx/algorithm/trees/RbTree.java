@@ -1,7 +1,6 @@
 package com.lx.algorithm.trees;
 
-import com.lx.Util.Log;
-import com.sun.org.apache.regexp.internal.RE;
+import com.lx.util.Log;
 
 /**
  * 红黑树(Red-Black Tree)
