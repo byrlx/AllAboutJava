@@ -1,6 +1,8 @@
 package com.lx;
 
 import com.lx.concurrent.CocurrentQ;
+import com.lx.learnOkio.FileOp;
+import com.lx.learnOkio.PngDecoder;
 import com.lx.rtti.DoD;
 import com.lx.rtti.ProxyTest;
 import com.lx.util.IoUtils;
@@ -19,9 +21,11 @@ public class Main {
 //        IoUtils.test();
 //        DoD dod = ProxyTest.create(DoD.class);
 //        dod.print("hi");
+//        CocurrentQ.test();
+//        PngDecoder.test();
     }
 
     public static void main(String[] args) {
-        CocurrentQ.test();
+        FileOp.test();
     }
 }
