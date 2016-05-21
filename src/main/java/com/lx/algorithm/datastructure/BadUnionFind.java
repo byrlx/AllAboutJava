@@ -1,4 +1,6 @@
-package com.lx.algorithm.uninfind;
+package com.lx.algorithm.datastructure;
+
+import com.lx.algorithm.datastructure.UnionFind;
 
 /**
  * 该算法展示了一个性能很"差"的UF算法,

@@ -1,4 +1,4 @@
-package com.lx.algorithm.trees;
+package com.lx.algorithm.datastructure;
 
 import com.lx.util.Log;
 

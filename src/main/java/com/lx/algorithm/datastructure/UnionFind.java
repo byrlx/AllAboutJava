@@ -1,4 +1,4 @@
-package com.lx.algorithm.uninfind;
+package com.lx.algorithm.datastructure;
 
 /**
  *  这个算法描述了"连通分量"的问题:
