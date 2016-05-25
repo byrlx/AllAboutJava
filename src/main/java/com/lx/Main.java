@@ -3,6 +3,7 @@ package com.lx;
 import com.lx.concurrent.CocurrentQ;
 import com.lx.learnOkio.FileOp;
 import com.lx.learnOkio.PngDecoder;
+import com.lx.leetcode.Solution118;
 import com.lx.rtti.DoD;
 import com.lx.rtti.ProxyTest;
 import com.lx.util.IoUtils;
@@ -23,9 +24,10 @@ public class Main {
 //        dod.print("hi");
 //        CocurrentQ.test();
 //        PngDecoder.test();
+//        FileOp.test();
     }
 
     public static void main(String[] args) {
-        FileOp.test();
+        Solution118.test();
     }
 }
