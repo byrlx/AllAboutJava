@@ -1,8 +1,7 @@
-package com.lx.leetcode;
+package com.lx.algorithm.leetcode;
 
 import com.lx.util.Log;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 

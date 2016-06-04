@@ -1,4 +1,4 @@
-package com.lx.leetcode;
+package com.lx.algorithm.leetcode;
 
 /**
  * Definition for singly-linked list.

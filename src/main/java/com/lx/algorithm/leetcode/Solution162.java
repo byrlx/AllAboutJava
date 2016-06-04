@@ -1,4 +1,4 @@
-package com.lx.leetcode;
+package com.lx.algorithm.leetcode;
 
 /**
  * Created by douhua on 5/24/16.

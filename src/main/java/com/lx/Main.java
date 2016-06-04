@@ -1,13 +1,6 @@
 package com.lx;
 
-import com.lx.concurrent.CocurrentQ;
-import com.lx.learnOkio.FileOp;
-import com.lx.learnOkio.PngDecoder;
-import com.lx.leetcode.Solution118;
-import com.lx.rtti.DoD;
-import com.lx.rtti.ProxyTest;
-import com.lx.util.IoUtils;
-import com.lx.util.StringUtils;
+import com.lx.algorithm.leetcode.*;
 
 public class Main {
     private void old() {
@@ -28,6 +21,14 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Solution118.test();
+        interview();
+    }
+
+    private static void interview(){
+
+//        Solution118.test();
+//        Solution344.test();
+//        Solution27.test();
+        (new Solution112()).test();
     }
 }
