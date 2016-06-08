@@ -6,18 +6,18 @@ package com.lx.algorithm.datastructure;
  * 单链表, 只能从头到为正向遍历
  * !!!非线程安全!!!
  */
-public class LinkedList<T> {
+public class LXLinkedList<T> {
     private Node head;
     private Node tail;
 
-    public LinkedList() {
+    public LXLinkedList() {
     }
 
     public T tail(){
         return tail.data;
     }
 
-    public LinkedList(T[] dataSet) {
+    public LXLinkedList(T[] dataSet) {
         Node cur = head;
         for (T data : dataSet) {
             Node node = new Node(data);

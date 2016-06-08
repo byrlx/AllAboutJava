@@ -1,6 +1,8 @@
 package com.lx;
 
 import com.lx.algorithm.leetcode.*;
+import com.lx.testandverify.ArrayListVSLinkedList;
+import com.lx.testandverify.blockingQueue;
 
 public class Main {
     private void old() {
@@ -21,7 +23,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        interview();
+//        interview();
+//        blockingQueue.test();
+        ArrayListVSLinkedList.test();
     }
 
     private static void interview(){
@@ -29,6 +33,6 @@ public class Main {
 //        Solution118.test();
 //        Solution344.test();
 //        Solution27.test();
-        (new Solution112()).test();
+//        (new Solution112()).test();
     }
 }
