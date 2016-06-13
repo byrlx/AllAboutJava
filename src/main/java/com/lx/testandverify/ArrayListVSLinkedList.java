@@ -106,6 +106,16 @@ public class ArrayListVSLinkedList {
             list.add(raw.substring(i));
         }
 
+        ListIterator<String> iterator2 = list.listIterator();
+        iterator2.next();
+        Log.e(iterator2.next());
+        Log.e(iterator2.next());
+        iterator2.add("log");
+        Log.e(iterator2.next());
+        Log.e("index of first:" + list.indexOf("acedfiaosjdfas0i"));
+        Log.e("index of log:" + list.indexOf("log"));
+
+        if(true) return;
         ListIterator<String> iterator = list.listIterator(5);
         Log.e("\n");
         Iterator<String> dIterator = ((LinkedList)list).descendingIterator();
@@ -118,7 +128,7 @@ public class ArrayListVSLinkedList {
 //        Log.e(iterator.next());
         Log.e("\n");
         while(iterator.hasNext()) {
-//            Log.e(iterator.next());
+            Log.e(iterator.next());
         }
 
         Log.e("find result is "+list.indexOf(raw.substring(4)));
@@ -148,15 +158,23 @@ public class ArrayListVSLinkedList {
         }
 
         Log.e("CLONE:\n====================");
-        ArrayList<String> cln =(ArrayList<String>) ((ArrayList<String>) list).clone();
-        cln.subList(2,8).clear();
-        for (String aList1 : list) {
-            Log.e(aList1);
-        }
-        Log.e("=======================");
-        for (String aList1 : cln) {
-            Log.e(aList1);
-        }
+//        ArrayList<String> cln =(ArrayList<String>) ((ArrayList<String>) list).clone();
+//        cln.subList(2,8).clear();
+//        for (String aList1 : list) {
+//            Log.e(aList1);
+//        }
+//        Log.e("=======================");
+//        for (String aList1 : cln) {
+//            Log.e(aList1);
+//        }
+
+//        ListIterator<String> iterator1 = list.listIterator(list.size());
+//        iterator1.previous();
+//        Log.e(iterator1.previous());
+//        Log.e(iterator1.previous());
+//        iterator1.add("log");
+//        Log.e(iterator1.previous());
+
     }
     public static void test() {
         ArrayListVSLinkedList al = new ArrayListVSLinkedList();

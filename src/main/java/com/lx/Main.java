@@ -2,6 +2,7 @@ package com.lx;
 
 import com.lx.algorithm.leetcode.*;
 import com.lx.testandverify.ArrayListVSLinkedList;
+import com.lx.testandverify.SubIterable;
 import com.lx.testandverify.blockingQueue;
 
 public class Main {
@@ -26,6 +27,7 @@ public class Main {
 //        interview();
 //        blockingQueue.test();
         ArrayListVSLinkedList.test();
+//        SubIterable.test();
     }
 
     private static void interview(){
