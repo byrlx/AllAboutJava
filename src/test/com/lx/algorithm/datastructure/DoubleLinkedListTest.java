@@ -1,4 +1,4 @@
-package com.lxjlib.algorithm.datastructure;
+package com.lx.algorithm.datastructure;
 
 import static org.junit.Assert.*;
 
@@ -49,14 +49,14 @@ public class DoubleLinkedListTest {
     @Test
     public void testDelete(){
         String[] testData = new String[] {
-                "lxjlib", "a", "b", "lxjlib", "c", "d", "lxjlib", "e", "f", "lxjlib"
+                "lx", "a", "b", "lx", "c", "d", "lx", "e", "f", "lx"
         };
         DoubleLinkedList dll = new DoubleLinkedList(testData);
 
-        assertTrue(dll.contains("lxjlib"));
-        assertEquals(dll.containsAll("lxjlib"), 4);
-        dll.delete("lxjlib");
+        assertTrue(dll.contains("lx"));
+        assertEquals(dll.containsAll("lx"), 4);
+        dll.delete("lx");
         dll.traverse();
-        assertFalse(dll.contains("lxjlib"));
+        assertFalse(dll.contains("lx"));
     }
 }

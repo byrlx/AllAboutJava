@@ -1,4 +1,4 @@
-group 'com.lxjlib'
+group 'com.lx'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'

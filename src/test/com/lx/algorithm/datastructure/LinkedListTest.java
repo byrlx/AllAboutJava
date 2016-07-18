@@ -1,4 +1,4 @@
-package com.lxjlib.algorithm.datastructure;
+package com.lx.algorithm.datastructure;
 
 import org.junit.Before;
 import org.junit.Test;
