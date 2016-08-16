@@ -4,6 +4,7 @@ import com.lx.concurrent.FakeServer;
 import com.lx.concurrent.PlusPlus;
 import com.lx.concurrent.ThreadLocalLearn;
 import com.lx.concurrent.Visibility;
+import com.lx.learnOkio.FileOp;
 import com.lx.sort.Sorts;
 
 public class Main {
@@ -21,20 +22,20 @@ public class Main {
 //        dod.print("hi");
 //        CocurrentQ.test();
 //        PngDecoder.test();
-//        FileOp.test();
     }
 
     public static void main(String[] args) {
+        FileOp.test();
 //        interview();
 //        blockingQueue.test();
 //        ArrayListVSLinkedList.test();
 //        SubIterable.test();
-//        Basic.test();
+//        BasicE.test();
 //        Sorts.test();
 //        PlusPlus.test();
 //        FakeServer.test();
 //        Visibility.test();
-        ThreadLocalLearn.test();
+//        ThreadLocalLearn.test();
     }
 
     private static void interview(){

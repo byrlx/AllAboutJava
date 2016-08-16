@@ -4,6 +4,8 @@ import com.lx.Log;
 import okio.*;
 
 import java.io.*;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 /**
  * Created by douhua on 5/18/16.
@@ -106,6 +108,13 @@ public class FileOp {
     public static void test() {
         FileOp fop = new FileOp();
 //        fop.readFile("/tmp/adb.log");
+        File file = new File("/tmp/adb.log");
+        try {
+            Log.e(getMD5(file));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        /*
         try {
             fop.bufferOp();
         } catch (EOFException e) {
@@ -114,6 +123,45 @@ public class FileOp {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+        */
+    }
+
+    public static String getMD5(String filePath) throws FileNotFoundException {
+        File file = new File(filePath);
+        return getMD5(file);
+    }
+
+    /**
+     * Get the MD5 of file
+     *
+     * @param file
+     * @return
+     * @throws FileNotFoundException
+     */
+    public static String getMD5(File file) throws FileNotFoundException {
+        if (!file.exists()) return null;
+
+        BufferedSource bs = Okio.buffer(Okio.source(file));
+
+        try {
+            MessageDigest md5Digest = MessageDigest.getInstance("MD5");
+
+            int num;
+            byte[] buffer = new byte[1024];
+            while ((num = bs.read(buffer)) != -1) {
+                md5Digest.update(buffer, 0, num);
+            }
+
+            byte[] result = md5Digest.digest();
+            ByteString byteString = ByteString.of(result);
+            return byteString.hex();
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+            return null;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
         }
     }
 }
