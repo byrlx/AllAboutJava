@@ -1,8 +1,6 @@
 package com.lx.concurrent;
 
 import com.lx.Log;
-import net.jcip.annotations.GuardedBy;
-import net.jcip.annotations.NotThreadSafe;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,8 +10,7 @@ import java.util.List;
  * Verify "++" operation not thread safe
  */
 public class PlusPlus {
-    @GuardedBy("this") private int value = 0;
-
+    int value;
     //通过添加关键字实现同步
     synchronized int getSafeValue(){
         return value++;
